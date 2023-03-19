@@ -1,0 +1,15 @@
+{
+        "html.format.templating": true,
+        "json.format.enable": false,
+        "typescript.format.enable": false,
+        "less.format.enable": false,
+        "scss.format.enable": false,
+        "intelephense.format.enable": true,
+        "yaml.format.enable": false,
+        "json.format.keepLines": false,
+        "prolog.format.enabled": false,
+        "intelephense.format.braces": "psr12",
+        "editor.quickSuggestions": {
+                "comments": "on"
+        }
+}
