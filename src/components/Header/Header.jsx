@@ -1,27 +1,65 @@
-import React from 'react'
-import "./Header.css"
-import q from "../../assets/ataa.png"
-import { Link } from "react-router-dom";
+import React, { useState, useEffect, useRef } from 'react';
+import './css/Header.css';
+import { FiMenu } from 'react-icons/fi'
+import  m  from '../../assets/logo.svg'
 
 export default function Header() {
+
+        const [isMenuOpen, setIsMenuOpen] = useState(false);
+        const menuRef = useRef(null);
+
+        function handleMenuClick() {
+                setIsMenuOpen(!isMenuOpen);
+        }
+
+        function handleOutsideClick(event) {
+                if (menuRef.current && !menuRef.current.contains(event.target)) {
+                        setIsMenuOpen(false);
+                }
+        }
+
+        useEffect(() => {
+                document.addEventListener('mousedown', handleOutsideClick);
+                return () => {
+                        document.removeEventListener('mousedown', handleOutsideClick);
+                };
+        }, []);
+
         return (
-                <div className='nav'>
-                        <nav>
-                                <div className='main-nav'>
-                                        <div className='card-info-nav'>
-                                                <img className='image-nav' src={q} />
-                                                <h4 className='title-nav'>Ataa Charity</h4>
-                                        </div>
-                                        <div className="option--nav">
-                                                <Link className='a' to="/">Home</Link>
-                                                <Link className='a' to="/about">About</Link>
-                                                <Link className='a' to="/signupPage">Auth</Link>
+                <nav className='navbar'>
+                        <div className='logo' >
 
-                                        </div>  </div>
-                        </nav>
+                                        <div className="overly">
+                                                <h1 className="h1-home">Great futures are built
+                                                        with a small charity</h1>
+                                                <p className="h3-home">The World's largest social fundraising platform,
+                                                        optimized for your charity in a more easy way</p>
 
+                                       
 
+                                </div>
+                              
+                        </div>
+                        <div className='link'>
+                                <ul>
+                                        <li>Home</li>
+                                        <li>About</li>
+                                        <li>Contact</li>
+                                </ul>
 
-                </div >
-        )
+                        </div>
+                        <div className='menus'>
+                                <button className="navbar-toggle" onClick={handleMenuClick}>
+                                        <FiMenu />
+                                </button>
+                                <ul className={`navbar-menu ${isMenuOpen ? 'navbar-menu--open' : ''}`} ref={menuRef}>
+                                        <li>Home</li>
+                                        <li>About</li>
+                                        <li>Contact</li>
+                                </ul>
+                        </div>
+                </nav>
+
+        );
 }
+
