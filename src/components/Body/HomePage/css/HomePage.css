@@ -83,3 +83,63 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+.Show-News {
+    padding-left: 60px;
+}
+
+.Show-News h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.Under-Point {
+    width: 100px;
+    height: 3px;
+    background-color: rgb(120, 211, 203);
+    margin-bottom: 20px;
+}
+
+.all-Card-News {
+    display: flex;
+}
+
+.Card-News {
+    width: 250px;
+    height: 320px;
+    justify-content: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    scroll-snap-type: mandatory;
+    height: auto;
+}
+
+.img-cardNews {
+    width: 100%;
+}
+
+.CardNews-Type {
+    font-size: 15px;
+    font-weight: 300;
+    color: gray;
+}
+
+.CardNews-name {
+    font-weight: 800;
+}
+
+.CardNews-Descrption {
+    font-weight: 300;
+    color: grey;
+}
+
+.Button-Applay {
+    background-color: rgb(120, 211, 203);
+    border: none;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
