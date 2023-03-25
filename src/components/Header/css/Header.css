@@ -16,7 +16,8 @@
     margin-top: 160px;
     top: 0;
     left: 0;
-    width: 40%;
+    width: 25%;
+    margin-left: 3%;
     display: block;
     justify-content: center;
     align-items: center;
@@ -24,18 +25,36 @@
 
 .h1-home {
     color: #ffffff;
-    font-size: 10px;
+    font-size: 13px;
     text-align: left;
     justify-content: left;
-    padding-left: 70px;
-    padding-right: 30px;
+    font-weight: 500;
+    margin-bottom: -22px;
+    padding-top: 10px;
 }
 
 .h3-home {
-    text-align: center;
+    text-align: left;
     color: rgb(255, 255, 255);
-    font-size: 20px;
-    padding: 20px;
+    font-size: 23px;
+    font-weight: 700;
+    padding-top: 20px;
+    margin-bottom: -12px;
+}
+
+.h3-home2 {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.button-login {
+    border-radius: 0.2rem;
+    border: none;
+    padding: 10px;
+    background-color: rgb(120, 211, 203);
+    font-size: 12px;
 }
 
 ul {

@@ -30,16 +30,12 @@ export default function Header() {
                         <div className='logo' >
 
                                         <div className="overly">
-                                                <h1 className="h1-home">Great futures are built
-                                                        with a small charity</h1>
-                                                <p className="h3-home">The World's largest social fundraising platform,
-                                                        optimized for your charity in a more easy way</p>
-
-                                       
-
-                                </div>
-                              
-                        </div>
+                                                <h1 className="h1-home">Change is the end result of all true news.</h1>
+                                                <p className="h3-home">Like what you are news</p>
+                                                <p className="h3-home2">Get started today</p>                        
+                               
+                                <button className='button-login'>GET STARTED NOW {'>'}</button>
+                        </div> </div>
                         <div className='link'>
                                 <ul>
                                         <li>Home</li>
