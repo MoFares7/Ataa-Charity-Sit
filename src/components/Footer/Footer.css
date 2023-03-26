@@ -1,0 +1,63 @@
+   .footer {
+       background-color: #252727;
+       padding: 20px;
+       color: white;
+   }
+   
+   .row {
+       display: inline-flexbox;
+       padding: 10px;
+   }
+   
+   .container {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+   
+   .col {
+       float: inline-start;
+       display: flex;
+       justify-content: left;
+   }
+   
+   .quicklinks {
+       display: inline-block;
+       align-items: flex-end;
+       width: 90%;
+       justify-content: left;
+       margin: auto;
+       color: white;
+   }
+   
+   .ph {
+       display: flex;
+   }
+   
+   .Phone-icon {
+       width: 25px;
+       padding-right: 7px;
+       background-color: #252727;
+   }
+   
+   .phone-number {
+       font-weight: 400;
+       font-size: 15px;
+   }
+   
+   .git-icon {
+       width: 40px;
+       height: 40px;
+       padding-right: 7px;
+       background-color: #252727;
+   }
+   
+   @media (max-width: 576px) {
+       .container {
+           flex-direction: column;
+           align-items: left;
+       }
+       .col {
+           margin-top: 10px;
+       }
+   }
