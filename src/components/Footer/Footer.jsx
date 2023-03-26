@@ -12,8 +12,8 @@ export default function Footer() {
                                         <div className="row">
                                                 <div className="col">
                                                         <p>FM NEWS</p>
-                                                </div>
-                                                <div className="col">
+
+
                                                         <p className="quicklinks">
 
                                                                 <p className="ph">
@@ -31,28 +31,31 @@ export default function Footer() {
                                                                 </p>
 
                                                         </p>
+
                                                 </div>
-                                                <div className="col2">
-                                                        <h2>COMPANY</h2>
-                                                        <p>Apple</p>
-                                                        <p>Tesla</p>
-                                                        <p>BMV</p>
-                                                        <p>Volvo</p>
-                                                </div>
-                                                <div className="col2">
-                                                        <h2>SUPPORT</h2>
-                                                        <p>Apple</p>
-                                                        <p>Tesla</p>
-                                                        <p>BMV</p>
-                                                        <p>Volvo</p>
-                                                </div>
-                                                <div className="col2">
-                                                        <h2>COMMUNITY</h2>
-                                                        <p>Apple</p>
-                                                        <p>Tesla</p>
-                                                        <p>BMV</p>
-                                                        <p>Volvo</p>
-                                                </div>
+
+
+                                        </div>
+                                        <div className="col2">
+                                                <h2>COMPANY</h2>
+                                                <p>Apple</p>
+                                                <p>Tesla</p>
+                                                <p>BMV</p>
+                                                <p>Volvo</p>
+                                        </div>
+                                        <div className="col3">
+                                                <h2>SUPPORT</h2>
+                                                <p>Apple</p>
+                                                <p>Tesla</p>
+                                                <p>BMV</p>
+                                                <p>Volvo</p>
+                                        </div>
+                                        <div className="col4">
+                                                <h2>COMMUNITY</h2>
+                                                <p>Apple</p>
+                                                <p>Tesla</p>
+                                                <p>BMV</p>
+                                                <p>Volvo</p>
                                         </div>
                                 </div>
                         </footer>

@@ -2,10 +2,12 @@
        background-color: #252727;
        padding: 20px;
        color: white;
+       margin: auto;
+       margin-top: 18px;
    }
    
    .row {
-       display: inline-flexbox;
+       display: flex;
        padding: 10px;
    }
    
@@ -17,13 +19,12 @@
    
    .col {
        float: inline-start;
-       display: flex;
+       display: block;
        justify-content: left;
    }
    
    .quicklinks {
-       display: inline-block;
-       align-items: flex-end;
+       display: block;
        width: 90%;
        justify-content: left;
        margin: auto;
@@ -50,6 +51,22 @@
        height: 40px;
        padding-right: 7px;
        background-color: #252727;
+   }
+   
+   .col2 {
+       padding-left: auto;
+       justify-content: center;
+       text-align: center;
+   }
+   
+   .col3 {
+       padding-right: 10px;
+       text-align: center;
+   }
+   
+   .col4 {
+       padding-right: 90px;
+       text-align: center;
    }
    
    @media (max-width: 576px) {

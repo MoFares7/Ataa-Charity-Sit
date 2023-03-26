@@ -5,6 +5,7 @@ export default function CradNews() {
                 <div className="Card-News">
                         <img className="img-cardNews" src="https://images.unsplash.com/photo-1679189792474-6c2796dc78ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80" />
                         <p className="CardNews-Type">TECNOLOGY</p>
+                        <hr />
                         <h5 className="CardNews-name">The News to apple</h5>
 
                         <h5 className="CardNews-Descrption">Apple
