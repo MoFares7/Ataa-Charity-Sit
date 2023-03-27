@@ -55,6 +55,7 @@
     padding: 10px;
     background-color: rgb(120, 211, 203);
     font-size: 12px;
+    cursor: pointer;
 }
 
 ul {
@@ -78,14 +79,20 @@ li {
     margin-bottom: 340px;
     display: flex;
     align-content: space-between;
+    text-decoration: none;
+    color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 568px) {
     .navbar {
         flex-direction: row;
         align-items: flex-start;
     }
     .link {
+        display: none;
+        text-decoration: none;
+    }
+    .overly {
         display: none;
     }
     .menus {

@@ -2,13 +2,14 @@ import React from "react";
 import "../LoginPage/LoginPage.css"
 import { useNavigate } from "react-router-dom";
 import "./SignUpPage.css"
+
 export default function SignUpPage() {
 
         const navigate = useNavigate();
 
         const navigateToContacts = () => {
                 // 👇️ navigate to /contacts
-                navigate('/loginPage');
+                navigate('/LoginPage');
         };
 
         const [formData, setFormData] = React.useState({

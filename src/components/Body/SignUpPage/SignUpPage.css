@@ -3,7 +3,6 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -47,7 +46,7 @@
 
 .form--submit {
     border-radius: 0.3rem;
-    background-color: #376D64;
+    background-color: rgb(59, 159, 151);
     width: 50%;
     padding: 10px;
     margin-top: 20px;
@@ -64,7 +63,7 @@
 
 .login {
     font-weight: 700;
-    color: #376D64;
+    color: rgb(59, 159, 151);
     ;
     border: none;
 }

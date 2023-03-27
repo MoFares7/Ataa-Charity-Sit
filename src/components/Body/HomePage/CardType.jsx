@@ -1,23 +1,37 @@
 import React from "react";
 
-export default function CardType() {
+function Card({ key1, title, image, description }) {
         return (
                 <div className="cardType">
                         <div className="Header-Card">
-                            <div className="Point">
-                                <h1>.</h1>
+                                <div className="Point">
+                                        <h1>.</h1>
+                                </div>
+                                <h1 className="CardType-Type">{key1}</h1>
                         </div>
-                        <h1 className="CardType-Type">TECNOLOGY</h1>    
-                        </div>
-                        
-                        <img className="img-card" src="https://images.unsplash.com/photo-1679189792474-6c2796dc78ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80" />
-                     
-                        <h5 className="CardType-name">The News to apple</h5>
-                        
-                                <h5 className="CardType-Descrption">Totla Money</h5>
-                        
-                        <button className="Button-Read">READ MORE</button>
-
+                        <img src={image} alt={title} className='img-card' />
+                        <div className="card-body">
+                                <h3 className="CardType-name">{title}</h3>
+                                <p className="CardType-Descrption">{description}</p>
+                                <button className="Button-Read">READ MORE</button>                       </div>
                 </div>
-        )
+        );
 }
+
+function CardList({ articles }) {
+        return (
+                <div className="card-list">
+                        {articles.map((article) => (
+                                <Card
+                                        key={article.title}
+                                        key1={article.source.id}
+                                        title={article.title}
+                                        image={article.urlToImage}
+                                        description={article.description}
+                                />
+                        ))}
+                </div>
+        );
+}
+
+export default CardList;

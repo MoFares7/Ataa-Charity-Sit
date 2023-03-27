@@ -29,10 +29,37 @@
     margin-top: 0px;
 }
 
+.card-list {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
 .Show-CardType {
-    display: flex;
-    margin-top: 50px;
-    margin-left: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .cardType {
@@ -41,8 +68,12 @@
     justify-content: left;
     margin-left: 10px;
     margin-right: 20px;
-    scroll-snap-type: mandatory;
-    scroll-snap-type-x: inherit;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
 }
 
 .Header-Card {
@@ -74,6 +105,9 @@
 
 .cardType h5 {
     padding-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .cardType button {

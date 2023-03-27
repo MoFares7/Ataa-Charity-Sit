@@ -8,9 +8,7 @@ import MainRoutes from "./Routes/Routs";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <HomePage />
-      <Footer />
+    <MainRoutes />
     </div>
   );
 }
