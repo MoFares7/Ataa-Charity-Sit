@@ -32,14 +32,15 @@ export default function HomePage() {
                         })
                         .catch(error => console.log(error));
         }, [])
+
         const slideLeft = () => {
                 var slider = document.getElementById('slider');
-                slider.scrollLeft = slider.scrollLeft - 500;
+                slider.scrollLeft = slider.scrollLeft - 280;
         };
 
         const slideRight = () => {
                 var slider = document.getElementById('slider');
-                slider.scrollLeft = slider.scrollLeft + 500;
+                slider.scrollLeft = slider.scrollLeft + 280;
         };
         return (
                 <div className="main-back-home">
@@ -48,9 +49,11 @@ export default function HomePage() {
                                 <div className="Show-CardType">
                                         <h1>Some news</h1>
                                         <div className="Under-Point"></div>
-                                        {isLoading ? <div className="spinner"></div>
-                                                : <CardList articles={articles} />} {
-                                        }
+                                        <div className='scroll-some-news'>
+                                                {isLoading ? <div className="spinner"></div>
+                                                        : <CardList articles={articles} />} {
+                                                }
+                                        </div>
                                 </div>
 
                         </div>
@@ -62,10 +65,9 @@ export default function HomePage() {
                                 <div className="Under-Point"> </div>
                                 <div className="all-Card-News" >
 
-                                        <div className="Buttons">
-                                                <button className="Button" onClick={slideLeft}>{'<'}</button>
 
-                                        </div>
+                                        <button className="Button" onClick={slideLeft}>{'<'}</button>
+
 
                                         <div id="slider" className="all-Card-News">
                                                 {isLoading ? <div className="spinner"></div>
