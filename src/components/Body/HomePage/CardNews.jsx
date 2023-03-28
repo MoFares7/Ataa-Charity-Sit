@@ -1,20 +1,35 @@
 import React from "react";
 
-export default function CradNews() {
+function CardNews({ type, img, name, description }) {
         return (
                 <div className="Card-News">
-                        <img className="img-cardNews" src="https://images.unsplash.com/photo-1679189792474-6c2796dc78ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80" />
-                        <p className="CardNews-Type">TECNOLOGY</p>
+                        <img src={img} className="img-cardNews" />
+                        <p className="CardNews-Type">{type}</p>
                         <hr />
-                        <h5 className="CardNews-name">The News to apple</h5>
+                        <h5 className="CardNews-name">{name}</h5>
 
-                        <h5 className="CardNews-Descrption">Apple
+                        <h5 className="CardNews-Descrption">{description}</h5>
 
-                                Apple
-                                https://www.apple.com
-                                Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore accessories, entertainment, ...</h5>
 
                         <button className="Button-Applay">Applay Now</button>
                 </div>
         )
 }
+
+function CardLists({ articles1 }) {
+        return (
+                <div className="card-list">
+                        {articles1.map((article) => (
+                                <CardNews
+                                        key={article.title}
+                                        type={article.source.id}
+                                        title={article.title}
+                                        img={article.urlToImage}
+                                        description={article.description}
+                                />
+                        ))}
+                </div>
+        );
+}
+
+export default CardLists;
